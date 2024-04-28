@@ -36,7 +36,7 @@ module.exports = {
   // package metadata version so caching package metadata will interfere with it.
 
   // Recommended setting: 0
-  cacheAge: 0,
+  cacheAge:  10 * 60 * 1000,
 
   // Request config
 
@@ -51,7 +51,7 @@ module.exports = {
   // Remote and local URL
 
   // external url to npm_lazy, no trailing /
-  externalUrl: 'http://localhost:8080',
+  externalUrl: 'http://192.168.1.51:5001',
   // registry url with trailing /
   remoteUrl: 'https://registry.npmjs.com/',
   // bind port and host
